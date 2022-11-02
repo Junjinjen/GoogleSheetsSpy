@@ -106,7 +106,7 @@ namespace GoogleSheetsSpy
             // 5-6 класс
             new()
             {
-                { "A", From5to6Triggers }, // 7-11 класс
+                { "A", From5to6Triggers }, // 5-6 класс
                 { "B", LessonsTriggers }, // Урок
                 { "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
@@ -116,7 +116,7 @@ namespace GoogleSheetsSpy
             },
             new()
             {
-                { "A", From5to6Triggers }, // 7-11 класс
+                { "A", From5to6Triggers }, // 5-6 класс
                 { "B", LessonsTriggers }, // Урок
                 { "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
@@ -126,7 +126,7 @@ namespace GoogleSheetsSpy
             },
             new()
             {
-                { "A", From5to6Triggers }, // 7-11 класс
+                { "A", From5to6Triggers }, // 5-6 класс
                 { "B", LessonsTriggers }, // Урок
                 //{ "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
