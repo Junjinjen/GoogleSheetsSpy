@@ -61,14 +61,12 @@ namespace GoogleSheetsSpy
             new TextTrigger { Text = "5-6", },
         };
 
-        private static readonly List<ICellTrigger> LanguageMathTriggers = new()
+        private static readonly List<ICellTrigger> LessonsTriggers = new()
         {
             new TextTrigger { Text = "Математика", },
             new TextTrigger { Text = "Українська мова", },
-        };
-
-        private static readonly List<ICellTrigger> HistoryTriggers = new()
-        {
+            new TextTrigger { Text = "Мистецтво"},
+            new TextTrigger { Text = "Історія", },
             new TextTrigger { Text = "Історія України", },
             new TextTrigger { Text = "Історія та Громадянська освіта", },
             new TextTrigger { Text = "Історія України та Громадянська Освіта", },
@@ -82,8 +80,17 @@ namespace GoogleSheetsSpy
                 { "A", From7to11Triggers }, // 7-11 класс
                 { "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
+                { "J", FinalTriggers }, // Джерела
+                //{ "Q", ToTheOnlineSchoolTriggers }, // Видео
+                //{ "U", ReadyTriggers }, // Субтитры
+            },
+            new()
+            {
+                { "A", From7to11Triggers }, // 7-11 класс
+                { "H", FinalTriggers }, // Конспект
+                { "I", FinalTriggers }, // Тест
                 //{ "J", FinalTriggers }, // Джерела
-                { "Q", ToTheOnlineSchoolTriggers }, // Видео
+                //{ "Q", ToTheOnlineSchoolTriggers }, // Видео
                 //{ "U", ReadyTriggers }, // Субтитры
             },
             new()
@@ -92,41 +99,39 @@ namespace GoogleSheetsSpy
                 //{ "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
                 { "J", FinalTriggers }, // Джерела
-                { "Q", ToTheOnlineSchoolTriggers }, // Видео
+                //{ "Q", ToTheOnlineSchoolTriggers }, // Видео
                 //{ "U", ReadyTriggers }, // Субтитры
             },
 
-            // 5-6 класс, математика и укр. яз.
+            // 5-6 класс
             new()
             {
-                { "A", From5to6Triggers }, // 5-6 класс
-                { "B", LanguageMathTriggers }, // Урок
+                { "A", From5to6Triggers }, // 7-11 класс
+                { "B", LessonsTriggers }, // Урок
+                { "H", FinalTriggers }, // Конспект
+                { "I", FinalTriggers }, // Тест
+                { "J", FinalTriggers }, // Джерела
+                //{ "Q", ToTheOnlineSchoolTriggers }, // Видео
+                //{ "U", ReadyTriggers }, // Субтитры
+            },
+            new()
+            {
+                { "A", From5to6Triggers }, // 7-11 класс
+                { "B", LessonsTriggers }, // Урок
                 { "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
                 //{ "J", FinalTriggers }, // Джерела
-                { "Q", ToTheOnlineSchoolTriggers }, // Видео
+                //{ "Q", ToTheOnlineSchoolTriggers }, // Видео
                 //{ "U", ReadyTriggers }, // Субтитры
             },
             new()
             {
-                { "A", From5to6Triggers }, // 5-6 класс
-                { "B", LanguageMathTriggers }, // Урок
+                { "A", From5to6Triggers }, // 7-11 класс
+                { "B", LessonsTriggers }, // Урок
                 //{ "H", FinalTriggers }, // Конспект
                 { "I", FinalTriggers }, // Тест
                 { "J", FinalTriggers }, // Джерела
-                { "Q", ToTheOnlineSchoolTriggers }, // Видео
-                //{ "U", ReadyTriggers }, // Субтитры
-            },
-
-            // 5-6 класс, история
-            new()
-            {
-                { "A", From5to6Triggers }, // 5-6 класс
-                { "B", HistoryTriggers }, // Урок
-                { "H", FinalTriggers }, // Конспект
-                { "I", FinalTriggers }, // Тест
-                { "J", FinalTriggers }, // Джерела
-                { "Q", ToTheOnlineSchoolTriggers }, // Видео
+                //{ "Q", ToTheOnlineSchoolTriggers }, // Видео
                 //{ "U", ReadyTriggers }, // Субтитры
             },
         };
